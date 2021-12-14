@@ -1,0 +1,72 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-template-rows: 300px 400px 120px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  grid-area: header;
+  margin: auto;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header img {
+  display: block;
+  margin: auto;
+  width: 400px;
+}
+
+#ingredientes {
+  grid-area: main;
+  position: relative;
+  top: 3rem;
+  line-height: 2.5rem;
+}
+
+#ingredientes h2 {
+  text-align: center;
+}
+
+#ingredientes ul {
+  position: relative;
+  top: 0rem;
+}
+
+#preparo {
+  grid-area: main;
+  position: relative;
+  top: 5rem;
+  line-height: 2.5rem;
+}
+
+#preparo h2 {
+  text-align: center;
+}
+
+footer {
+  padding: 0 2rem;
+  grid-area: footer;
+  position: relative;
+  top: 30rem;
+}
+
+footer h3 {
+  text-align: center;
+}
+
+footer span {
+  padding: 2rem;
+}
